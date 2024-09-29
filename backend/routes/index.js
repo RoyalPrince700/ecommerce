@@ -35,6 +35,7 @@ const orderController = require('../controller/order/orderController')
 const likedProductController = require('../controller/user/likedProductController')
 const countLikedProduct = require('../controller/user/countLikedProduct')
 const likedProductView = require('../controller/user/likedProductView')
+const allOrderController = require('../controller/order/allOrder.controller')
 
 
 
@@ -73,6 +74,7 @@ router.get("/order-list",authToken, orderController)
 router.post("/liked-product", authToken, likedProductController)
 router.get("/countLikedProduct", authToken,countLikedProduct)
 router.get("/viewLikedProduct",authToken,likedProductView)
+router.get("/all-order",authToken,allOrderController)
 
 
 
