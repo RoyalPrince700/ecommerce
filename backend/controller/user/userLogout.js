@@ -6,7 +6,7 @@ async function userLogout(req, res) {
             sameSite : 'None'
           }
 
-        console.log("Clearing cookie with options:", cookieOptions); // Debugging log
+        console.log("Clearing cookie with options:", tokenOption); // Debugging log
 
         res.clearCookie("token", tokenOption);
 
